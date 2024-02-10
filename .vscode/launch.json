@@ -14,17 +14,6 @@
             "internalConsoleOptions": "openOnSessionStart",
             "program": "${workspaceFolder}/cmd/gin/main.go",
             "envFile": "${workspaceFolder}/configs/.local.env"
-        },
-        {
-            "name": "Tests",
-            "type": "go",
-            "request": "launch",
-            "mode": "test",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            // "program": "${workspaceFolder}/cmd/gin/main.go",
-            "envFile": "${workspaceFolder}/configs/.local.env"
-        },
+        }
     ]
 }

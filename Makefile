@@ -1,5 +1,3 @@
-.PHONY: m.create m.up m.down m.version m.goto m.force
-
 envfile := ./configs/.local.env
 
 export $(cat ${envfile} | xargs -L1)
@@ -28,3 +26,7 @@ m.goto:
 m.force:
 	@read -p "Enter migration version: " version; \
 	migrate -path ./migrations -database $(migrate_database) force $$version
+
+.PHONY: build
+build:
+	@go build ./cmd/gin/main.go
